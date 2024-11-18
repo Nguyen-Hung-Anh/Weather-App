@@ -1,0 +1,154 @@
+/* Main container for the weather application */  
+.weather {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+/* Search bar container */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 5px 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+/* Input field inside the search bar */
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  flex-grow: 1;
+  border-radius: 15px;
+}
+
+
+/* Search icon styling */
+.search-bar img {
+  width: 22px;
+  cursor: pointer;
+}
+
+/* Weather icon styling */
+.weather-icon {
+  width: 70px;
+  height: 70px;
+}
+
+/* Temperature text styling */
+.temperature {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* Location text styling */
+.location {
+  font-size: 32px; /* Adjusted size for better visibility */
+  color: #ffffff; /* White color to stand out against the gradient background */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.weather-data {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+}
+
+.weather-data .col {
+  display: flex;
+  align-items: center;
+}
+
+.weather-data .col img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.weather-data .col p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.weather-data .col span {
+  font-size: 16px;
+  color: #000000;
+}
+
+/* Carousel container for the forecast cards */
+.carousel {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Automatically adjust columns based on screen size */
+  gap: 15px;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+
+.weather-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.weather-card img {
+  width: 60px;
+  height: 60px;
+}
+
+.weather-card .temperature {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.weather-card .date {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Toast Container */
+.Toastify__toast-container {
+  z-index: 1000;
+}
+
+.clear-btn {
+  background-color: #f44336; /* Red color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.clear-btn:hover {
+  background-color: #d32f2f;
+}
+
+.today-label {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff; /* White color to stand out */
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+

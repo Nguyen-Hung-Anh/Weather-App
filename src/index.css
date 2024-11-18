@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+.app{
+  min-height: 100vh;
+  /*Easily align the app in the center of the page*/
+  display: grid;
+  background: linear-gradient(135deg, #3886d9, #5fa6d2); /* Add a gradient from light blue to a lighter shade */
+}
